@@ -3,6 +3,15 @@
   (click)="fetchIdea()">Find something to do</button>
   <div class="idea" *ngIf="idea">
     <h1 class="idea-activity">{{ idea.activity }}</h1>
-    <p class="idea-title"></p>
+    <div class="idea-items">
+    <span class="idea-participants">
+      <span class="idea-icon">
+        <mat-icon>person</mat-icon>
+      </span>
+      {{ idea.participants }}
+    </span>
+    <span class="idea-price">{{ idea.formattedPrice }}</span>
+    <span class="idea-accessibility">{{ idea.formattedAccessibility }}</span>
+    </div>
   </div>
 </section>
