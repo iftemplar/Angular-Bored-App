@@ -11,6 +11,17 @@
   margin-bottom: 20px;
 }
 
+.idea-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.idea-price {
+  font-size: 25px;
+  color: green;
+}
+
 .idea-participants {
   display: flex;
   align-items: center;
