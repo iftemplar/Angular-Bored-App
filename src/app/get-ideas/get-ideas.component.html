@@ -1,4 +1,8 @@
 <section class="ideas">
-  <button mat-raised-button color="primary">Find something to do</button>
+  <button mat-raised-button color="primary" class="idea-button"
+  (click)="fetchIdea()">Find something to do</button>
+  <div class="idea" *ngIf="idea">
+    <h1 class="idea-activity">{{ idea.activity }}</h1>
+    <p class="idea-title"></p>
+  </div>
 </section>
-
